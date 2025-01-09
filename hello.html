@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Samsharky">
+		<title> 我的網頁</title>
+		<style>
+			aside {width: 30%; height: 300px; background: pink; float: right;}
+			.note{color:blue;}
+		</style>
+	</head>
+	<body onload="javascript: alert('Hi');">
+		
+		<header>
+			<h1>header</h1>
+		</header>
+		
+		<!--註解-->
+		<p id="三角形">三角形</p>
+		<h1>Hello, HTML5!</h1>
+		<article>
+			<p> 用&quotarticle&quot取代div，功能更清楚&copy。</p>
+			<section><p>用section切分</p></section>
+		</article>
+		<main><h2>主要內容</h2></main>
+		<aside>
+			<p>aside邊側欄</p>
+		</aside>
+		
+		<nav>
+			<p>nav做導覽列</p>
+			<ul>
+				<li><a href="https://www.google.com">google</a></li>
+				<li><a href="https://www.youtube.com/">youtube</a></li>
+		</nav>
+		<figure>
+			<!--照片連結-->
+			<figcaption>
+				我的照片
+			</figcaption>
+		</figure>
+		<pre>
+		<p>pre預先格式化區塊，保留空白、換行</p>
+		void main(){
+			printf("Hello world");
+		}
+		</pre>
+		
+		<blockquote cite="https://cool.ntu.edu.tw/">
+			<p>blockquote為引述區塊，用cite設定引述來源，引述的段落會自動向右縮排</p>
+		</blockquote>
+		
+		<address>
+			<p>address來標示個人、團體或組織的聯絡訊息</p>
+			<a href="mailto: samlee201806@gmail.com">samlee201806@gmail.com</a>
+		</address>
+		
+		<p>hr水平線，br換行</p><hr><br>
+		<b>b粗體,</b><i>i斜體,</i><u>u+底線</u>
+		H<sub>2</sub>O
+		X<SUP>3</SUP>
+		<small>small,</small><em>em強調斜體,</em><strong>strong強調粗體,</strong><dfn>dfn定義,</dfn>
+		<code>code程式碼,</code><samp>sample範例文字</samp><kbd>kbd鍵盤文字</kbd><var>var變數文字</var><cite>cite引用文字</cite>
+		<abbr>abbr縮寫文字</abbr><s>s刪除字</s><q>q引用語</q><mark>mark螢光標記</mark><ruby>ruby、rt標註拼音韓<rt>ㄏㄢˊ</rt></ruby><br>
+		
+		<span class="note">「用span」</span>不會換行
+		
+		<p>時間為(time)<time datetime="2024-02-13">2月13日<time datetime="08:00">早上八點鐘</p>
+		倒數(del刪除，ins插入)<del datetime="2025-04-12">2</del>
+		<ins datetime="2025-04-13" ="過一天">1<ins>
+		
+		<ul>
+			<li>用ul標示項目符號</li>
+			<li>li標出每一項</li>
+			<li>可以和ol、ul製作巢狀</li>
+			<li>
+				<ol type="I" start="5" reversed>
+					<li>用ol標示編號</li>
+					<li>可用type = "A","a","i","I"</li>
+					<li>start="數字"說明編號開始</li>
+					<li>reversed顛倒順序，也可用value="n"自定義序數</li>
+				</ol>
+			</li>
+		</ul>
+		
+		<dl>
+		<p>dl定義清單之始末</P>
+			<dt>dt清單第一層</dt>
+				<dd>dd清單第二層</dd>
+		</dl>
+		
+		<ul>
+			<li><a  href="https://www.nba.com/" target="_blank">NBA</a></li>
+			<li><a href="mailto: samlee201806@gmail.com">samlee201806@gmail.com</a></li>
+			<li><a href="tel:+8869001234564">Phone</a></li>
+			<li><a href="https://drive.google.com/file/d/1S1z9-AtWlu-53o26GiZlMrOGJ0lTQ1a6/view?usp=sharing" download="Download.jpg">下載檔案(需同源網域)</a></li>
+		</ul>
+		
+		
+		
+		<p>用href="#.."建立網頁內連結</p>
+		
+		<ul>
+			<li><a href="#三角形">回到三角形</a></li>
+		</ul>	
+		
+		<img width="50%vw" src="picture.png" alt="用%vw說明圖片佔視野多少%"><br>
+		<!--img sizes="(max-width: 600px) 400px,800px" src="picture.png" alt="媒體查詢尺吋"-->
+		<video width="100%vw" src="video.mp4" controls poster="picture.png"   muted></video>
+		
+		
+		<iframe width="300px" height="200px" srcdoc="<p>this is iframe</p>"></iframe><br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Wmgi1UeIL4U?si=KAtMaYC7kLjjgEdj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5174.260650785588!2d102.24902181791165!3d2.1942320738268264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1df1eab3167%3A0x575278b4d9e2849!2sThe%20Sterling%20Boutique%20Hotel%20Melaka!5e1!3m2!1szh-TW!2stw!4v1736387804431!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<footer>
+			<h1>footer，herf="#"</h1>
+			<p><a href="#">back to top</a></p>
+		</footer>
+		
+
+		
+	</body>
+</html>
